@@ -16,3 +16,4 @@ git commit -m 'deploy'
 git push -f git@github.com:nyapat/smlguide.git master:gh-pages
 
 cd -
+read -p "enter"
