@@ -7,11 +7,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+      - name: Vuepress deploy
+        uses: jenkey2011/vuepress-deploy@v1.8.1
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: nyapat/smlguide
-          TARGET_BRANCH: main
           BUILD_SCRIPT: npm i && npm run docs:build
-          BUILD_DIR: docs/.vuepress/dist
+          BUILD_DIR: docs/.vuepress/dist/
