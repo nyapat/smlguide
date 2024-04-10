@@ -4,7 +4,7 @@ import { defineUserConfig } from "vuepress";
 
 export default defineUserConfig({
   title: "Town of Salem 2 Modding",
-  base: "/smlguide/",
+  base: "/smlguide",
   bundler: viteBundler(),
   theme: defaultTheme({
     sidebar: [
