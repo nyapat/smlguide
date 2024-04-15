@@ -20,5 +20,16 @@ export default defineUserConfig({
         ],
       },
     ],
+    navbar: [
+      {
+        text: "Mod Guides",
+        children: [
+          {
+            text: "Text Editor",
+            link: "/mod-guides/text-editor.md",
+          },
+        ],
+      },
+    ],
   }),
 });
