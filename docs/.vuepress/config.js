@@ -7,20 +7,36 @@ export default defineUserConfig({
   base: "/smlguide/",
   bundler: viteBundler(),
   theme: defaultTheme({
-    sidebar: [
+    sidebar: {
+      "/": [
+        {
+          text: "Home",
+          children: ["/", "/guide/setup.md"],
+        },
+        {
+          text: "Creating Your Mod",
+          children: [
+            "/guide/creating-your-mod/creating-your-project.md",
+            "/guide/creating-your-mod/compiling-your-project.md",
+          ],
+        },
+      ],
+      "/mod-guides/": [
+        {
+          text: "Home",
+          link: "/",
+        },
+        {
+          text: "Text Editor",
+          children: ["/mod-guides/text-editor.md"],
+        },
+      ],
+    },
+    navbar: [
       {
         text: "Home",
-        children: ["/", "/guide/setup.md"],
+        link: "/",
       },
-      {
-        text: "Creating Your Mod",
-        children: [
-          "/guide/creating-your-mod/creating-your-project.md",
-          "/guide/creating-your-mod/compiling-your-project.md",
-        ],
-      },
-    ],
-    navbar: [
       {
         text: "Mod Guides",
         children: [
