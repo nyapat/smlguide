@@ -7,8 +7,12 @@ To do this, we will use a command line tool to copy files from a template from u
 Begin by opening a command line and typing;
 
 ```sh
-dotnet new install VoidBehemoth.SMLTemplate
+dotnet new install VoidBehemoth.SMLTemplate::1.0.0
 ```
+
+::: tip
+1.0.0 is a working version, but 1.1.0 includes an unresolved path that does not work out of the box, so don't install the latest version.
+:::
 
 After installing the template, navigate to a folder that you wish to create a project in. You can do this with `cd folder` or simply by right clicking while in a folder and clicking 'Open in Terminal.'
 
